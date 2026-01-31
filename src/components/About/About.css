@@ -1,110 +1,35 @@
-/* MAIN ABOUT SECTION */
 .about {
   display: flex;
-  flex-direction: column;
-  padding: 120px 80px;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 60px;
+  max-width: fit-content;
+  padding: 100px;
+  border-color: white;
+  border: solid 2px;
 }
 
-/* TITLE ON TOP */
-.about-title h2 {
-  font-size: 14px;
-  letter-spacing: 2px;
+.about-title {
+  display: flex;
+  justify-content: left;
+  color: grey;
   text-transform: uppercase;
-  color: #9aa4b2;
+  cursor: pointer;
+  padding-left: 150px;
 }
 
-/* CONTENT ROW (TEXT + IMAGE) */
 .about-content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 80px;
-}
-
-/* LEFT SIDE TEXT */
-.about-me {
-  flex: 1.2;
-}
-
-.about-me h1 {
-  font-size: 42px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.about-me p {
-  font-size: 18px;
-  line-height: 1.8;
-  color: #c7cbd1;
-  margin-bottom: 30px;
-  max-width: 600px;
-}
-
-/* RESUME BUTTON */
-.contact-me {
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #6e8efb, #a777e3);
-  color: #0b0f14;
-  font-weight: 500;
-  text-decoration: none;
-  margin-bottom: 50px;
-}
-
-/* SKILLS SECTION */
-.skills h3 {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-/* SKILLS GRID USING FLEX */
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-/* SKILL CARD */
-.skill-card {
-  width: 100px;
-  background: #131823;
-  border: 1px solid #222a3a;
-  border-radius: 12px;
-  padding: 16px 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-/* SKILL ICON */
-.skill-card img {
-  width: 36px;
-  height: 36px;
-}
-
-/* SKILL NAME */
-.skill-card span {
-  font-size: 14px;
-  color: #e6e9ef;
-}
-
-/* RIGHT SIDE IMAGE */
-.profile {
-  flex: 0.8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 50px;
 }
 
 .profile img {
-  width: 320px;
-  height: 320px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid #222a3a;
+  margin-left: 150px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
 }

@@ -10,19 +10,15 @@ import gitIcon from "../../assets/git.png";
 const About = () => {
   return (
     <section className="about">
-      {/* TOP CENTER TITLE */}
       <div className="about-title">
         <h2>My Personal Information</h2>
       </div>
-
-      {/* MAIN ROW: IMAGE LEFT, TEXT RIGHT */}
+      
       <div className="about-content">
-        {/* LEFT PROFILE IMAGE */}
         <div className="profile">
           <img src={profileImg} alt="Profile" />
         </div>
 
-        {/* RIGHT TEXT & SKILLS */}
         <div className="about-me">
           <h1>About Me</h1>
           <p>
@@ -36,10 +32,10 @@ const About = () => {
           <div className="skills">
             <h3>Skills</h3>
             <div className="skills-grid">
-              <Skill icon={htmlIcon} label="HTML" />
-              <Skill icon={cssIcon} label="CSS" />
               <Skill icon={jsIcon} label="JavaScript" />
               <Skill icon={reactIcon} label="React" />
+              <Skill icon={htmlIcon} label="HTML" />
+              <Skill icon={cssIcon} label="CSS" />
               <Skill icon={gitIcon} label="Git" />
             </div>
           </div>
