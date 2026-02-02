@@ -4,7 +4,7 @@ import profile_img from "../../assets/portfolio.png";
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero-content">
         <h1>
           <span>Hi, I'm Sasher Gurung </span>Front-end Developer

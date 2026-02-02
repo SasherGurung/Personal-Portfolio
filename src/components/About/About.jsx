@@ -7,9 +7,9 @@ import jsIcon from "../../assets/javascript.png";
 import reactIcon from "../../assets/react.png";
 import gitIcon from "../../assets/git.png";
 
-const About = () => {
+function About() {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about-title">
         <h2>My Personal Information</h2>
       </div>

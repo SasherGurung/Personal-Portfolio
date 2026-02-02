@@ -82,3 +82,9 @@
     transform: scale(1.10);
     color: rgb(176, 40, 255);
 }
+
+.nav-menu a,
+.nav-contact a {
+  color: inherit; 
+  text-decoration: none;
+}
