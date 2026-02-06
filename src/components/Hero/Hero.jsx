@@ -14,8 +14,13 @@ const Hero = () => {
           and high-performance user interfaces using modern web technologies.
         </p>
         <div className="hero-action">
-          <div className="hero-connect">Connect With me</div>
-          <div className="hero-resume">My Resume</div>
+          <a href="mailto:sashergrg602@gmail.com" className="hero-connect">
+            Connect With Me
+          </a>
+
+          <a href="/resume.pdf" target="_blank" className="hero-resume">
+            My Resume
+          </a>
         </div>
       </div>
 
