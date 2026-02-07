@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.css";
 import profile_img from "../../assets/portfolio.png";
 
-const Hero = () => {
+function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero-content">
