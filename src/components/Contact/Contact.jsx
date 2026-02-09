@@ -16,7 +16,7 @@ function Contact() {
     });
 
     const data = await response.json();
-    setResult(data.success ? "Success!" : "Error");
+    setResult(data.success ? "Submitted!" : "Please try again.");
   };
 
   return (

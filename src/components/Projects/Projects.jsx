@@ -1,7 +1,5 @@
 import React from "react";
 import "./Projects.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 import projects from "../../projects.js";
 
 function Projects() {
@@ -10,15 +8,30 @@ function Projects() {
       <div className="projects-title">
         <h1>MY PROJECTS</h1>
       </div>
-      <div>
-        
-      </div>
+
       <div className="projects-container">
         {projects.map((project) => (
-          <div className="card" key={project.id}>
-            <img src={project.img} alt={project.name} />
-            <h2>{project.name}</h2>
-            <p>{project.description}</p>
+          <div className="project-card" key={project.id}> 
+            <div className="project-img">
+              <img src={project.img} alt={project.name} />
+            </div>
+
+            <div className="project-content">
+              <h2>{project.name}</h2>
+              <p>{project.description}</p>
+
+              <div className="project-tools">
+                {project.tools.map((tool, index) => (
+                  <span key={index}>{tool}</span>
+                ))}
+              </div>
+
+              <div className="project-buttons">
+                <a href={project.live} target="_blank" rel="noreferrer">
+                  Live Demo
+                </a>
+              </div>
+            </div>
           </div>
         ))}
       </div>

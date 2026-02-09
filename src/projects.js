@@ -1,25 +1,13 @@
-import ChatbotImg from "./assets/chatbot-project.png"
-import RockPaperScissorsImg from "./assets/rock-paper-scissor-project.png"
-import CalculatorImg from "./assets/calculator-project.png"
+import WorkInProgressImg from "./assets/work-in-progress.png";
 
 const projects = [
     {
         id: 1,
-        name: "Chat-Bot",
-        description: "A React chatbot featuring dynamic messages and a responsive design.",
-        img: ChatbotImg
-    },
-    {
-        id: 2,
-        name: "Project 2",
-        description: "This is a description of Project 2.",
-        img: RockPaperScissorsImg
-    },
-    {
-        id: 3,
-        name: "Project 3",
-        description: "This is a description of Project 3.",
-        img: CalculatorImg
+        name: "Sneaker-Ecommerce Website (Ongoing)",
+        description: "Will be building a Sneaker-Ecommerce website using React for the frontend. The website will feature a user-friendly interface, allowing customers to browse and purchase sneakers online. It will include features such as product listings, shopping cart functionality.",
+        tools: ["React", "JavaScript", "HTML", "CSS", "Git"],
+        live: "",
+        img: WorkInProgressImg
     }
 ]
 
