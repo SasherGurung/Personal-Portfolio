@@ -24,7 +24,7 @@ function Hero() {
             Connect With Me
           </a>
 
-          <a href="/resume.pdf" target="_blank" className="hero-resume">
+          <a href="resume.pdf" target="_blank" className="hero-resume">
             My Resume
           </a>
         </div>
