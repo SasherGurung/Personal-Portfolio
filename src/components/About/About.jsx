@@ -38,17 +38,15 @@ function About() {
         >
           <h1>About Me</h1>
           <p>
-            I am a frontend developer focused on building clean, responsive, and
+            I am a frontend developer focused on building clean, responsive and
             accessible web interfaces using modern web technologies. I
-            prioritize performance, usability, and maintainable code.
+            prioritize performance, usability and maintainable code.
           </p>
-
-          <div className="contact-me">My Resume</div>
 
           <div className="skills">
             <h3>Skills</h3>
             <div className="skills-grid">
-              <Skill icon={jsIcon} label="JavaScript" />
+              <Skill icon={jsIcon} label="JavaScript" />z
               <Skill icon={reactIcon} label="React" />
               <Skill icon={htmlIcon} label="HTML" />
               <Skill icon={cssIcon} label="CSS" />

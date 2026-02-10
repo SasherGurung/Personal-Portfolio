@@ -39,9 +39,9 @@ function Contact() {
         >
           <h2>Let’s Connect</h2>
           <p>
-            I’m an IT student and aspiring frontend developer currently looking
-            for internship opportunities. If you’re interested in working
-            together or have any opportunities, feel free to reach out.
+            I’m an aspiring frontend developer currently looking for internship
+            opportunities. If you’re interested in working together or have any
+            opportunities, feel free to reach out.
           </p>
 
           <div>📧 sashergrg602@gmail.com</div>

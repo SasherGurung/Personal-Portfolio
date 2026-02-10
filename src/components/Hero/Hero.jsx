@@ -16,7 +16,7 @@ function Hero() {
           <span>Hi, I'm Sasher Gurung </span>Front-end Developer
         </h1>
         <p>
-          Frontend Developer specializing in building responsive, accessible,
+          Frontend developer passionate about building responsive, accessible
           and high-performance user interfaces using modern web technologies.
         </p>
         <div className="hero-action">
@@ -24,7 +24,11 @@ function Hero() {
             Connect With Me
           </a>
 
-          <a href="/personal-portfolio/resume.pdf" target="_blank" className="hero-resume">
+          <a
+            href="/personal-portfolio/resume.pdf"
+            target="_blank"
+            className="hero-resume"
+          >
             My Resume
           </a>
         </div>
