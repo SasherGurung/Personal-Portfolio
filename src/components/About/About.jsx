@@ -6,20 +6,36 @@ import cssIcon from "../../assets/css.png";
 import jsIcon from "../../assets/javascript.png";
 import reactIcon from "../../assets/react.png";
 import gitIcon from "../../assets/git.png";
+import { motion } from "framer-motion";
 
 function About() {
   return (
     <section className="about" id="about">
-      <div className="about-title">
+      <motion.div
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+        className="about-title"
+      >
         <h2>My Personal Information</h2>
-      </div>
-      
-      <div className="about-content">
-        <div className="profile">
-          <img src={profileImg} alt="Profile" />
-        </div>
+      </motion.div>
 
-        <div className="about-me">
+      <div className="about-content">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          className="profile"
+        >
+          <img src={profileImg} alt="Profile" />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          className="about-me"
+        >
           <h1>About Me</h1>
           <p>
             I am a frontend developer focused on building clean, responsive, and
@@ -39,11 +55,11 @@ function About() {
               <Skill icon={gitIcon} label="Git" />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
-};
+}
 
 const Skill = ({ icon, label }) => (
   <div className="skill-card">

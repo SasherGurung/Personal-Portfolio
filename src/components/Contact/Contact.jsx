@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 function Contact() {
   const [result, setResult] = useState("");
@@ -21,10 +22,21 @@ function Contact() {
 
   return (
     <section className="contact" id="contact">
-      <h1>GET IN TOUCH</h1>
+      <motion.h1
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+      >
+        GET IN TOUCH
+      </motion.h1>
 
       <div className="contact-container">
-        <div className="contact-info">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          className="contact-info"
+        >
           <h2>Let’s Connect</h2>
           <p>
             I’m an IT student and aspiring frontend developer currently looking
@@ -35,8 +47,14 @@ function Contact() {
           <div>📧 sashergrg602@gmail.com</div>
           <div>📞 9806618711</div>
           <div>📍 Pokhara (Chhinedanda)</div>
-        </div>
-        <form onSubmit={onSubmit} className="contact-form">
+        </motion.div>
+        <motion.form
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          onSubmit={onSubmit}
+          className="contact-form"
+        >
           <p>Your Name</p>
           <input
             type="text"
@@ -63,7 +81,7 @@ function Contact() {
           <button type="submit">Send Message</button>
 
           <p className="form-result">{result}</p>
-        </form>
+        </motion.form>
       </div>
     </section>
   );

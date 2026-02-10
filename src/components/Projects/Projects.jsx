@@ -1,15 +1,26 @@
 import React from "react";
 import "./Projects.css";
 import projects from "../../projects.js";
+import { motion } from "framer-motion";
 
 function Projects() {
   return (
     <section className="projects" id="projects">
-      <div className="projects-title">
+      <motion.div 
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+      className="projects-title"
+      >
         <h1>MY PROJECTS</h1>
-      </div>
+      </motion.div>
 
-      <div className="projects-container">
+      <motion.div 
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+      className="projects-container"
+      >
         {projects.map((project) => (
           <div className="project-card" key={project.id}> 
             <div className="project-img">
@@ -34,7 +45,7 @@ function Projects() {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }
