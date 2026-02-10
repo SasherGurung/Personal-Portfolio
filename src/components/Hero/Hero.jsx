@@ -24,7 +24,11 @@ function Hero() {
             Connect With Me
           </a>
 
-          <a href="resume.pdf" target="_blank" className="hero-resume">
+          <a
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
+            target="_blank"
+            className="hero-resume"
+          >
             My Resume
           </a>
         </div>
