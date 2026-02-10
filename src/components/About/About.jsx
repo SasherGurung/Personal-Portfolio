@@ -46,7 +46,7 @@ function About() {
           <div className="skills">
             <h3>Skills</h3>
             <div className="skills-grid">
-              <Skill icon={jsIcon} label="JavaScript" />z
+              <Skill icon={jsIcon} label="JavaScript" />
               <Skill icon={reactIcon} label="React" />
               <Skill icon={htmlIcon} label="HTML" />
               <Skill icon={cssIcon} label="CSS" />
