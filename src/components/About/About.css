@@ -4,6 +4,8 @@
   flex-direction: column;
   padding: 100px;
   border-color: white;
+  height: 100vh;
+  height: 100dvh;
 }
 
 .about-title {

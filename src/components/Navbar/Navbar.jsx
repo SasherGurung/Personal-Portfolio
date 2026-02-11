@@ -1,8 +1,16 @@
 import React from "react";
 import "./Navbar.css";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function Navbar() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <div className="navbar">
       <motion.div
@@ -17,7 +25,7 @@ function Navbar() {
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
-        className="nav-menu"
+        className={showMenu ? "menu-mobile" : "nav-menu"}
       >
         <li className="nav-link">
           <a href="#home">Home</a>
@@ -40,6 +48,11 @@ function Navbar() {
       >
         <a href="#contact">Contact</a>
       </motion.div>
+      <div className="ham-menu">
+          <button onClick={handleMenu}>
+            <GiHamburgerMenu />
+          </button>
+        </div>
     </div>
   );
 }
