@@ -136,4 +136,8 @@
   .contact-form {
     order: 2;
   }
+
+  .contact-form p {
+    text-align: left;
+  }
 }

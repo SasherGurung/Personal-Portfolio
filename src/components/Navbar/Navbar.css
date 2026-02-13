@@ -91,12 +91,6 @@
   display: none;
 }
 
-@media (max-width: 1200px) {
-  .nav-contact {
-    display: none;
-  }
-}
-
 .navbar {
   display: flex;
   align-items: center;
@@ -210,6 +204,10 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 15px 50px;
+  }
+
   .logo {
     font-size: 1.5rem;
   }
