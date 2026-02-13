@@ -133,6 +133,9 @@
 }
 
 @media (max-width: 768px) {
+  .about {
+    padding: 10% 3%;
+  }
 
   .about-content {
     flex-direction: column;
@@ -180,5 +183,9 @@
   .profile img {
     height: 300px;
     width: 300px;
+  }
+
+  .skills-card {
+    padding: 2px;
   }
 }

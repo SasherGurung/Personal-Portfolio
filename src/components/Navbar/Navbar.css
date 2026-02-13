@@ -91,3 +91,157 @@
   display: none;
 }
 
+@media (max-width: 1200px) {
+  .nav-contact {
+    display: none;
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 80px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  background-color: rgb(33, 9, 52, 0.7);
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 55px;
+}
+
+.nav-link {
+  position: relative;
+  transform: 0.15s;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.4s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  color: rgb(176, 40, 255);
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.logo span {
+  background: linear-gradient(270deg, #bc18cb 10%, #c851ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-contact {
+  font-size: 1.5rem;
+  position: relative;
+
+  transition: 0.15s;
+}
+
+.nav-contact::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.nav-contact:hover::after {
+  width: 100%;
+}
+
+.nav-contact:hover {
+  transform: scale(1.1);
+  color: rgb(176, 40, 255);
+}
+
+.nav-menu a,
+.nav-contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ham-menu {
+  display: none;
+}
+
+.ham-menu button {
+  background: transparent;
+  border: none;
+  padding: 5px;
+}
+
+.hamburger-icon {
+  color: #c851ff;
+  font-size: 28px;
+  transition: 0.2s;
+}
+
+
+@media (max-width: 1200px) {
+  .nav-contact {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .ham-menu {
+    display: inline-block;
+  }
+
+  .menu-mobile {
+    display: flex; 
+    flex-direction: column;
+    position: absolute;
+    list-style: none;
+    align-items: center;
+    background-color: rgba(78, 23, 123, 0.90);
+    top: 60px;
+    right: 15px;
+    left: 15px;
+    padding: 25px;
+    border-radius: 5px;
+    gap: 30px;
+    z-index: 1200;
+  }
+
+  .nav-link a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+}
