@@ -1,11 +1,12 @@
 .about {
   display: flex;
-  max-width: fit-content;
   flex-direction: column;
-  padding: 100px;
+  padding: 0 6%;
   border-color: white;
   height: 100vh;
   height: 100dvh;
+  width: 100%;
+  max-width: 100%;
 }
 
 .about-title {
@@ -15,6 +16,7 @@
   text-transform: uppercase;
   cursor: pointer;
   padding-left: 150px;
+  margin-top: 10%;
 }
 
 .about-content {
@@ -90,4 +92,35 @@
 
 .skill-card span {
   font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+  .about-title {
+    font-size: 14px;
+  }
+
+  .profile img {
+    height: 350px;
+    width: 350px;
+  }
+
+  .about-me {
+    padding: 0 3%;
+  }
+
+  .about-me h1 {
+    font-size: 40px;
+  }
+
+  .about-me p {
+    font-size: 18px;
+  }
+
+  .skills h3 {
+    font-size: 25px;
+  }
+
+  .skills-card {
+    
+  }
 }
