@@ -38,6 +38,7 @@
 .project-card {
   background: #6460600d;
   border: 2px solid rgb(153, 12, 192);
+  max-width: 380px;
   border-radius: 22px;
   overflow: hidden;
   transition: 0.35s;
