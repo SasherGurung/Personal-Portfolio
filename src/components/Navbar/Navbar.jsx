@@ -12,7 +12,7 @@ function Navbar() {
   };
 
   const handleClick = () => {
-    setShowMenu(false); // closes the menu
+    setShowMenu(false);
   };
 
   return (
