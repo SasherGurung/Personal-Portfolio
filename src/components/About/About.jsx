@@ -6,6 +6,8 @@ import cssIcon from "../../assets/css.png";
 import jsIcon from "../../assets/javascript.png";
 import reactIcon from "../../assets/react.png";
 import gitIcon from "../../assets/git.png";
+import tailwindCssIcon from "../../assets/tailwindcss.png"
+import nextJsIcon from "../../assets/nextjs.png"
 import { motion } from "framer-motion";
 
 function About() {
@@ -47,10 +49,12 @@ function About() {
             <h3>Skills</h3>
             <div className="skills-grid">
               <Skill icon={jsIcon} label="JavaScript" />
-              <Skill icon={reactIcon} label="React" />
+              <Skill icon={reactIcon} label="React.js" />
               <Skill icon={htmlIcon} label="HTML" />
               <Skill icon={cssIcon} label="CSS" />
+              <Skill icon={tailwindCssIcon} label="Tailwind Css" />
               <Skill icon={gitIcon} label="Git" />
+              <Skill icon={nextJsIcon} label="Next.js" />
             </div>
           </div>
         </motion.div>
